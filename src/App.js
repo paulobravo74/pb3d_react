@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
+
 import './App.css';
+import portfolio from './service/portf';
 
 function App() {
+
+  console.log(portfolio[0].architect)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>{portfolio[0].architect}</h1>
+      <p>{portfolio[0].local}</p>
+      <p>{portfolio[0].software}</p>
     </div>
   );
 }
