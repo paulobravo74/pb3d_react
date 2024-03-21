@@ -1,9 +1,11 @@
 import portfolio from "../service/portf"
 import { Link } from "react-router-dom"
 import '../App.css'
+import '../components/components.css'
 import Navbar from "../components/navbar"
 import Banner from "../components/banner"
-import Cards from "../components/cards"
+import Portfolio from "../components/portfolio"
+
 
 export default function Main() {
 
@@ -13,22 +15,18 @@ export default function Main() {
         <Navbar />
         <Banner />
         
-        <div id="portf">
-            <h1>Portfolio</h1>
-            <div className='container_cards'>
-                    {portfolio.map((item) => {
+        <Portfolio />
 
-                        return (
-                            <Cards
-                                key={item.id}
-                                image={item.images[1]}
-                                arch={item.architect}
-                                local={item.local}
-                            />
-                        )
+        <div id="showreel">
+            <h1>Showreel</h1>
+        </div>
 
-                    })}
-            </div>
+        <div id="about">
+            <h1>About</h1>
+        </div>
+
+        <div id="contact">
+            <h1>Contact</h1>
         </div>
 
         <Link to="/album">

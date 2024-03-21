@@ -1,14 +1,14 @@
 export default function Cards({image, arch, local}) {
     return (
-        <div id="portfolio">
+        <div id="portfolio" className="cardsContainer">
             
-            <div className="cards">
+            <div className="card">
                 <div>
-                    <img src={image} alt=""></img>
+                    <img src={image} className="img" alt=""></img>
                 </div>
 
                 <div>
-                    <p className="card-arch">{arch}</p>
+                    <h3 className="card-arch">{arch}</h3>
                     <p className="card-local">{local}</p>
                 </div>
            

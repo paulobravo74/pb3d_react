@@ -1,4 +1,14 @@
+.bg_red {
+  background-color: red;
+}
 
+.bg_green {
+  background-color: green;
+}
+
+.bg_blue {
+  background-color: blue;
+}
 
 .navbar {
     background-color: red;
@@ -34,4 +44,31 @@ button {
     padding: 10px;
     top: 300px;
     width: 50%;
+  }
+
+  #portf {
+    padding-top: 70px;
+  }
+
+  .container_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .card {
+    background-color: rgb(220, 220, 220);
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    border-radius: 10px;
+  }
+
+  .img {
+    width: 250px;
+    height: 20vh;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
