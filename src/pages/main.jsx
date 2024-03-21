@@ -12,7 +12,25 @@ export default function Main() {
     <div className="App">
         <Navbar />
         <Banner />
-        <Cards />
+        
+        <div id="portf">
+            <h1>Portfolio</h1>
+            <div className='container_cards'>
+                    {portfolio.map((item) => {
+
+                        return (
+                            <Cards
+                                key={item.id}
+                                image={item.images[1]}
+                                arch={item.architect}
+                                local={item.local}
+                            />
+                        )
+
+                    })}
+            </div>
+        </div>
+
         <Link to="/album">
             <button>Album</button>
         </Link>
