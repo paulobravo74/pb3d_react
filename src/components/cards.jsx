@@ -1,8 +1,13 @@
-export default function Cards({image, arch, local}) {
+import React from "react"
+
+export default function Cards({image, arch, local, onMouseEnter}) {
+    
+    
+    
     return (
         <div id="portfolio" className="cardsContainer">
             
-            <div className="card">
+            <div className="card" onMouseEnter={onMouseEnter}>
                 <div>
                     <img src={image} className="img" alt=""></img>
                 </div>
