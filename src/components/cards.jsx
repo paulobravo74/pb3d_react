@@ -1,13 +1,13 @@
 import React from "react"
 
-export default function Cards({image, arch, local, onMouseEnter}) {
+export default function Cards({image, arch, local, onClick}) {
     
     
     
     return (
         <div id="portfolio" className="cardsContainer">
             
-            <div className="card" onMouseEnter={onMouseEnter}>
+            <div className="card" onClick={onClick}>
                 <div>
                     <img src={image} className="img" alt=""></img>
                 </div>

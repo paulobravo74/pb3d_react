@@ -65,6 +65,11 @@ button {
     border-radius: 10px;
   }
 
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
   .img {
     width: 250px;
     height: 20vh;

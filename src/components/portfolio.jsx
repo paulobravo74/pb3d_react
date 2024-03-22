@@ -4,7 +4,7 @@ import Cards from "./cards"
 
 export default function Portfolio() {
 
-    const handleMouseEnter = (architect) => {
+    const handleCardClick = (architect) => {
         console.log(`Hello ${architect}`)
     }
 
@@ -20,7 +20,7 @@ export default function Portfolio() {
                                 image={item.images[1]}
                                 arch={item.architect}
                                 local={item.local}
-                                onMouseEnter={() => handleMouseEnter(item.architect)}
+                                onClick={() => handleCardClick(item.architect)}
                             />
                         )
 
